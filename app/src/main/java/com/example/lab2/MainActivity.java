@@ -4,15 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         editText = findViewById(R.id.editText);
         spinner = findViewById(R.id.spinner);
-        button.setText(R.string.button_text);
-        button = findViewById(R.id.button);
+        button = findViewById(R.id.button); // Initialize the button
+        button.setText(R.string.button_text); // Set the text for the button
         textView = findViewById(R.id.textView);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
